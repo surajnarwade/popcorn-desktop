@@ -3,6 +3,7 @@
 /********
  * setup *
  ********/
+
 const nwVersion = '0.33.4',
     availablePlatforms = ['linux32', 'linux64', 'win32', 'win64', 'osx64'],
     releasesDir = 'build',
@@ -142,7 +143,10 @@ if (osvar === 'osx64') {
     osvar = 'linux-ia32.zip';
 }
 //console.log(osvar);
-const ffmpegurl = 'https://github.com/iteufel/nwjs-ffmpeg-prebuilt/releases/download/' + nwVersion + '/' + nwVersion + '-' + osvar;
+//const ffmpegurl = 'https://github.com/iteufel/nwjs-ffmpeg-prebuilt/releases/download/' + nwVersion + '/' + nwVersion + '-' + osvar;
+
+const ffmpegVersion = '0.35.3';
+const ffmpegurl = 'https://github.com/iteufel/nwjs-ffmpeg-prebuilt/releases/download/' + ffmpegVersion + '/' + ffmpegVersion + '-' + osvar;
 
 /*************
  * gulp tasks *
